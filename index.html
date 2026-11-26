@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dar Prosthodents | CAD/CAM Dental Laboratory, Lahore &amp; Karachi</title>
+<meta name="description" content="Dar Prosthodents is a dental laboratory in Lahore and Karachi making CAD/CAM zirconia crowns and bridges, implant prosthetics, dentures and orthodontic appliances. Send us a case.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#070b14; --deep:#0c1426; --ivory:#f3efe6; --mute:#9aa6bd;
+  --blue:#3d8bff; --ice:#9fd0ff; --line:rgba(159,208,255,.18);
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{font-family:var(--sans);color:var(--ivory);background:var(--ink);line-height:1.65;font-size:1.05rem;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ice);outline-offset:3px}
+.wrap{width:min(1100px,100% - 2.5rem);margin-inline:auto}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:.9rem 1.25rem;padding-top:calc(.9rem + env(safe-area-inset-top,0px));background:linear-gradient(var(--ink),transparent)}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-family:var(--serif);font-size:1.35rem;letter-spacing:.02em}
+.brand svg{width:26px;height:26px}
+.btn{display:inline-block;padding:.7rem 1.4rem;border:1px solid var(--ice);border-radius:999px;text-decoration:none;font-weight:500;font-size:.95rem;transition:background .25s,color .25s}
+.btn:hover{background:var(--ice);color:var(--ink)}
+.btn.solid{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.btn.solid:hover{background:var(--ice);border-color:var(--ice)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;padding:7rem 0 4rem;overflow:hidden;
+  background:radial-gradient(60% 55% at 72% 45%,rgba(61,139,255,.28),transparent 70%),var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:2rem;align-items:center}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.7rem,7.2vw,5.6rem);line-height:1;letter-spacing:-.01em}
+h1 em{color:var(--ice)}
+.hero p{max-width:34ch;margin:1.6rem 0 2rem;color:var(--mute);font-size:1.15rem}
+.hero .cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.rise{opacity:0;transform:translateY(22px);animation:rise 1s cubic-bezier(.2,.7,.2,1) forwards}
+.rise:nth-child(2){animation-delay:.25s}.rise:nth-child(3){animation-delay:.5s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+.stage{position:relative;aspect-ratio:1;width:min(100%,520px);margin-inline:auto}
+.stage svg{width:100%;height:100%;overflow:visible}
+.disc{transform-origin:200px 200px;animation:spin 90s linear infinite}
+.disc2{transform-origin:200px 200px;animation:spin 140s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.crown-draw{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 3.2s .6s ease forwards,glow 4.5s 3.8s ease-in-out infinite}
+.crown-fill{opacity:0;animation:fillin 1.6s 3s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fillin{to{opacity:1}}
+@keyframes glow{50%{filter:drop-shadow(0 0 10px var(--ice))}}
+.beam{animation:scan 5s 1s ease-in-out infinite;mix-blend-mode:screen}
+@keyframes scan{0%{transform:translateY(0);opacity:0}10%{opacity:1}50%{transform:translateY(250px);opacity:1}60%,100%{transform:translateY(250px);opacity:0}}
+.scrollcue{position:absolute;left:50%;bottom:1.4rem;width:1px;height:46px;background:linear-gradient(var(--ice),transparent);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* sections */
+section{padding:clamp(4.5rem,11vw,8rem) 0}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4.8vw,3.5rem);line-height:1.08;margin-bottom:1.2rem}
+.lede{color:var(--mute);max-width:46ch}
+.split{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,6vw,5rem)}
+.why{background:var(--deep)}
+.why dl{display:grid;gap:1.6rem}
+.why dt{font-family:var(--serif);font-size:1.6rem;color:var(--ice)}
+.why dd{color:var(--mute);padding-bottom:1.6rem;border-bottom:1px solid var(--line)}
+.why dd:last-child{border:0}
+
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;position:relative}
+.steps::before{content:"";position:absolute;top:1.1rem;left:0;right:0;height:1px;background:var(--line)}
+.steps li{counter-increment:s;position:relative;padding-top:3.2rem}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--ink);border:1px solid var(--ice);display:grid;place-items:center;font-family:var(--serif);font-size:1.2rem;color:var(--ice)}
+.steps b{display:block;font-family:var(--serif);font-weight:400;font-size:1.5rem;margin-bottom:.3rem}
+.steps span{color:var(--mute);font-size:.98rem}
+
+.depts{background:var(--deep)}
+.dept{display:grid;grid-template-columns:1fr 1.5fr;gap:1.5rem 3rem;padding:2.2rem 0;border-top:1px solid var(--line)}
+.dept h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.1}
+.dept p{color:var(--mute);margin-top:.6rem;max-width:32ch;font-size:.98rem}
+.dept ul{list-style:none;display:flex;flex-wrap:wrap;gap:.55rem;align-content:flex-start}
+.dept li{padding:.45rem 1rem;border:1px solid var(--line);border-radius:999px;font-size:.95rem;transition:border-color .25s,background .25s}
+.dept li:hover{border-color:var(--ice);background:rgba(159,208,255,.08)}
+
+.contact{text-align:center;background:radial-gradient(70% 60% at 50% 100%,rgba(61,139,255,.25),transparent 70%),var(--ink)}
+.contact h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+.contact .lede{margin:0 auto 2rem}
+.branches{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:3.5rem auto 2.5rem;max-width:760px;text-align:left}
+.branch{padding:1.6rem;border:1px solid var(--line)}
+.branch h3{font-family:var(--serif);font-weight:400;font-size:1.7rem;margin-bottom:.4rem}
+.branch address{font-style:normal;color:var(--mute);margin-bottom:.9rem}
+.branch a{display:block;text-decoration:none;margin-top:.2rem}
+.branch a.wa{color:var(--ice);font-weight:500}
+.meta{color:var(--mute);font-size:.95rem}
+footer{padding:2rem 0 calc(2rem + env(safe-area-inset-bottom,0px));text-align:center;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line)}
+
+@media (max-width:820px){
+  .hero .wrap,.split,.dept{grid-template-columns:1fr}
+  .hero{padding-top:6rem}.stage{width:min(88%,380px);order:-1}
+  .steps{grid-template-columns:1fr}.steps::before{top:0;bottom:0;left:1.1rem;right:auto;width:1px;height:auto}
+  .steps li{padding:0 0 0 3.4rem}
+  .branches{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rise,.crown-fill{opacity:1;transform:none}.crown-draw{stroke-dashoffset:0}.beam,.scrollcue{display:none}
+}
+
+.logo{height:46px;width:auto;display:block}
+.cadcam{background:radial-gradient(60% 50% at 20% 0,rgba(61,139,255,.16),transparent 70%),var(--ink)}
+.ccgrid{display:grid;grid-template-columns:1.7fr 1fr;gap:2rem;margin-top:2.5rem;align-items:center}
+.ccbox{border:1px solid var(--line);padding:.6rem;background:#070b14}
+#cc{width:100%;height:auto;display:block}
+.ph{list-style:none;display:grid;gap:1.1rem}
+.ph li{padding:.2rem 0 .2rem 1.1rem;border-left:2px solid var(--line);opacity:.45;transition:opacity .4s,border-color .4s}
+.ph li.on{opacity:1;border-color:var(--ice)}
+.ph b{font-family:var(--serif);font-weight:400;font-size:1.5rem;display:block}.ph span{color:var(--mute);font-size:.95rem}
+.lab{margin-top:3rem;display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;align-items:center}
+.lab img{width:100%;display:block;border-radius:4px}.lab figcaption{color:var(--mute);max-width:32ch;font-family:var(--serif);font-size:1.5rem;line-height:1.2}
+#cc .model,#cc .beam,#cc .rcrown{opacity:0}
+#cc .model{transition:opacity .6s}#cc.p1 .model{opacity:1}#cc.p2 .model{opacity:.25}
+#cc.p1 .beam{animation:bs 3.4s ease-in-out}
+@keyframes bs{0%{transform:translateY(0);opacity:0}10%{opacity:1}90%{transform:translateY(190px);opacity:1}100%{transform:translateY(190px);opacity:0}}
+#cc .mesh path{stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#cc.p2 .mesh path{opacity:1;animation:dm 3.2s ease forwards}
+#cc.p3 .mesh path,#cc.p4 .mesh path{opacity:1;stroke-dashoffset:0}
+@keyframes dm{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+#cc .rcrown{opacity:1}
+#cc .cover{transform-box:fill-box;transform-origin:50% 100%}
+#cc.p3 .cover{animation:rv 3.4s linear forwards}#cc.p4 .cover{transform:scaleY(0)}
+@keyframes rv{to{transform:scaleY(0)}}
+#cc .tool{opacity:.3}#cc.p3 .tool{opacity:1;animation:tm 3.4s linear forwards}
+@keyframes tm{to{transform:translateY(166px)}}
+#cc .tw{transform:translateX(0)}#cc.p3 .tw{animation:sw .5s ease-in-out infinite alternate}
+@keyframes sw{from{transform:translateX(-48px)}to{transform:translateX(48px)}}
+#cc.p4 .rcrown{animation:lf 3.4s ease-in-out}
+@keyframes lf{50%{transform:translateY(-8px);filter:drop-shadow(0 0 12px #9fd0ff)}}
+.dept{display:block;padding:2.4rem 0}
+.dhead{display:grid;grid-template-columns:1fr 1.5fr;gap:1rem 3rem;align-items:end;margin-bottom:1.4rem}
+.dhead p{margin:0;max-width:46ch}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem}
+.tiles figure{background:#fff;border-radius:6px;overflow:hidden;transition:transform .3s}
+.tiles figure:hover{transform:translateY(-4px)}
+.tiles img{display:block;width:100%;height:auto}
+.tiles figcaption{color:#16233f;font-size:.85rem;font-weight:500;padding:.55rem .7rem;border-top:1px solid #e3e8f2}
+footer .logo{margin:0 auto 1rem;height:56px}
+@media (max-width:820px){.ccgrid,.lab,.dhead{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,1fr)}.ph{grid-template-columns:1fr 1fr}.logo{height:38px}}
+@media (prefers-reduced-motion:reduce){#cc .beam{display:none}}
+
+.brand .nm{height:32px;width:auto}.nm.big{height:50px;display:block;margin:0 auto 1rem}
+.hero{display:grid;place-items:center;text-align:center;padding:6.5rem 0 4.5rem;background:var(--ink)}
+.hero .wrap{display:block}.aura{position:absolute;left:50%;top:42%;width:min(110vw,900px);aspect-ratio:1;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(61,139,255,.3),transparent);animation:ap 7s ease-in-out infinite}
+@keyframes ap{50%{opacity:.55;transform:translate(-50%,-50%) scale(1.08)}}
+.mark{position:relative;height:min(46svh,480px);width:auto;display:block;margin:0 auto 1.6rem;overflow:visible;animation:fl 9s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+.ol{stroke-dasharray:1;stroke-dashoffset:1;animation:dr 2.8s .3s cubic-bezier(.5,0,.2,1) forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.fl{opacity:0;animation:fi 1.5s 2.3s ease forwards}@keyframes fi{to{opacity:1}}
+.beam{opacity:0;animation:bm 7s 3.6s ease-in-out infinite}
+@keyframes bm{0%{transform:translateY(0);opacity:0}4%{opacity:1}30%{transform:translateY(1400px);opacity:1}34%,100%{transform:translateY(1400px);opacity:0}}
+.nd{fill:#3d8bff;opacity:0;transform-box:fill-box;transform-origin:center;animation:nd 7s infinite}
+@keyframes nd{0%{opacity:0;transform:scale(.5)}3%{opacity:.9;transform:scale(1)}13%{opacity:0;transform:scale(1.7)}100%{opacity:0}}
+.hero h1{font-size:clamp(1.5rem,4.4vw,3rem);letter-spacing:.3em;padding-left:.3em}
+.hero p{max-width:52ch;margin:1.2rem auto 1.8rem;font-size:1.05rem}.hero .cta{justify-content:center}
+.feat{list-style:none;display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2rem}
+.feat li{padding:.45rem 1rem;border:1px solid var(--line);border-radius:999px;font-size:.95rem;color:var(--mute)}
+@media (prefers-reduced-motion:reduce){.ol{stroke-dashoffset:0}.fl{opacity:1}.nd,.beam{display:none}}
+.hero p{max-width:60ch}
+dialog{margin:auto;width:min(92vw,420px);padding:2rem 1.6rem 1.8rem;background:var(--deep);color:var(--ivory);border:1px solid var(--line);border-radius:14px;text-align:center}
+dialog::backdrop{background:rgba(3,6,12,.75);backdrop-filter:blur(4px)}
+dialog[open]{animation:pop .35s cubic-bezier(.2,.8,.2,1)}@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.97)}}
+dialog h3{font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1.1}
+dialog p{color:var(--mute);margin:.5rem 0 1.4rem;font-size:.98rem}
+dialog .btn{display:block;margin-top:.7rem}
+dialog .x{position:absolute;top:.5rem;right:.8rem;background:none;border:0;color:var(--mute);font-size:1.8rem;line-height:1;cursor:pointer}
+</style>
+</head>
+<body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><path id="th" pathLength="1" d="M113 68L105 76L101 85L101 107L79 135L72 139L52 137L43 140L28 152L22 163L20 170L22 188L27 197L42 211L43 224L32 289L32 302L29 309L16 319L12 329L12 337L17 348L27 355L32 363L49 471L49 479L32 495L27 505L27 528L32 538L42 548L53 553L70 555L74 559L114 643L113 650L106 664L106 671L110 681L120 693L120 705L117 715L116 735L106 792L101 800L93 803L83 812L78 823L77 831L83 848L90 855L100 859L105 864L120 959L102 980L99 998L104 1013L108 1019L118 1026L133 1030L138 1037L157 1102L157 1108L152 1115L148 1126L148 1133L152 1143L162 1152L175 1154L181 1159L211 1211L212 1230L219 1240L223 1242L233 1242L242 1237L252 1237L279 1241L292 1249L301 1249L307 1245L310 1239L311 1222L324 1195L337 1186L343 1178L343 1166L331 1151L325 1104L326 1096L334 1088L339 1079L340 1065L336 1056L325 1044L325 1030L330 980L341 967L344 959L344 954L338 942L338 937L351 897L356 874L361 868L371 863L377 856L380 849L380 831L449 770L455 768L492 768L525 775L539 783L554 798L573 824L591 855L612 903L628 955L636 995L637 1014L643 1047L653 1193L659 1222L665 1238L677 1252L689 1257L710 1255L747 1238L782 1213L805 1190L824 1166L839 1142L858 1101L870 1067L881 1026L889 980L893 928L896 912L896 749L890 678L928 595L950 552L983 471L1003 402L1010 365L1010 348L1014 328L1014 289L1010 263L1010 239L1007 218L1003 206L999 182L988 151L977 128L956 98L938 80L912 63L889 53L869 47L816 40L791 40L773 44L747 44L737 47L724 47L710 51L702 51L694 54L685 54L674 58L617 69L607 73L462 108L431 104L425 102L417 94L411 91L403 91L388 95L271 61L267 56L266 47L261 37L250 27L237 22L224 22L208 30L199 40L194 57L189 62L151 74L144 74L135 67L128 65ZM261 1168L266 1170L282 1222L279 1225L252 1221L244 1216L244 1210ZM284 1159L287 1159L302 1168L308 1177L309 1187L305 1198L299 1207L294 1203L291 1188L284 1172L282 1164ZM198 1140L240 1143L246 1149L247 1153L231 1196L227 1201L221 1197L194 1149L194 1143ZM303 1100L308 1102L312 1125L314 1150L311 1153L292 1142L288 1138L285 1128L287 1120ZM258 1001L260 1001L267 1010L291 1051L286 1065L286 1078L289 1087L273 1108L269 1105L266 1088L262 1040L259 1030L256 1004ZM236 996L245 1048L252 1114L246 1122L239 1125L200 1122L194 1116L191 1110L191 1105L233 998ZM220 971L222 976L180 1087L174 1095L170 1090L153 1031L153 1025L162 1016L167 1004L169 992L173 988L215 971ZM265 963L299 963L305 965L312 972L312 1004L308 1035L305 1038L300 1033L264 973L263 965ZM334 879L335 885L322 934L318 938L305 946L273 945L268 942L268 939L328 882ZM216 864L220 870L224 905L227 916L227 929L218 940L216 948L211 954L170 971L162 972L159 969L159 965L203 882L208 869L211 865ZM330 852L329 857L255 926L249 927L246 924L236 865L238 860L244 856L256 842L269 841L287 845L299 845L310 848L327 849ZM182 834L187 838L195 851L196 859L145 957L139 961L134 955L120 860L131 849L136 840L142 836ZM355 766L356 780L352 796L351 815L334 830L321 831L311 828L268 824L259 819L259 813L263 809L339 759L346 759ZM427 747L430 750L429 754L372 813L369 810L369 804L375 772L379 768L386 767L399 760L413 745ZM190 742L194 746L204 785L203 793L193 801L185 816L181 819L138 819L134 814L136 806L179 749L185 743ZM211 744L212 738L226 724L247 727L273 727L293 731L326 731L332 737L332 741L329 745L250 797L244 797L221 785ZM458 696L446 725L440 730L420 728L414 723L414 718L418 713L453 694ZM152 692L166 703L167 718L171 730L136 779L126 789L124 784L129 762L138 700L142 695ZM231 539L233 541L231 553L225 569L197 677L193 683L177 688L163 677L162 661L158 653L158 648L199 586L207 571L227 542ZM263 507L267 510L346 689L345 694L330 714L308 714L297 711L258 710L243 707L230 707L222 701L213 688L222 647L233 613L259 512ZM283 502L285 500L293 502L473 606L478 611L479 615L477 632L469 665L409 698L403 698L387 688L364 683L358 673L348 647L285 510ZM233 491L235 493L234 499L145 635L139 640L133 639L121 618L90 552L90 546L98 536L103 520L106 517L224 491ZM292 476L296 472L308 467L428 428L437 428L457 443L467 477L477 529L478 551L481 567L480 586L477 588L407 547L299 487L292 480ZM278 448L280 441L289 431L296 419L307 405L316 398L401 407L412 412L408 416L292 455L285 455ZM235 457L232 467L224 474L196 478L172 485L105 499L97 497L92 488L95 480L137 409L145 403L158 403L170 398L174 399ZM187 384L189 382L194 382L198 384L221 385L233 388L247 388L264 392L280 392L291 395L293 399L268 439L262 444L252 445L247 443L188 388ZM53 348L58 348L110 364L115 368L118 380L125 391L125 397L90 458L75 479L68 478L64 474L63 459L57 431L56 412L46 359L47 353ZM421 301L426 319L430 346L439 378L438 385L432 392L424 393L413 390L396 390L378 386L365 386L355 383L333 382L330 379L331 374L395 295L400 294L416 297ZM377 287L375 292L339 336L313 372L306 378L291 375L271 375L263 372L240 371L231 368L212 368L199 365L195 362L200 357L318 309L342 297L351 295L373 285ZM205 231L162 325L157 332L138 335L129 340L122 347L113 348L67 334L62 330L62 327L91 305L199 231ZM378 257L376 265L370 269L287 302L188 345L179 346L175 342L175 337L189 305L222 237L228 233L245 231L251 228L263 217L271 218L371 251ZM196 204L196 210L186 219L54 310L48 308L61 216L64 213L81 206L94 191L105 189L120 193L168 197L176 200L189 200ZM399 131L401 152L400 174L404 214L401 220L383 234L376 235L275 202L270 198L269 192L274 186L291 179L394 127ZM444 124L447 127L447 132L435 159L427 189L423 197L421 194L417 128L421 122ZM91 149L116 117L133 114L138 116L198 176L198 181L195 183L185 183L176 180L162 180L151 177L128 176L119 173L102 172L95 164L91 155ZM240 156L240 99L244 93L255 87L264 79L271 79L353 104L372 108L377 112L373 117L262 172L245 163ZM152 92L189 80L198 79L222 97L224 105L224 154L220 162L217 164L211 164L149 101L149 96Z"/></defs></svg>
+
+<nav>
+  <a class="brand" href="#top" aria-label="Dar Prosthodents home"><svg class="nm" viewBox="-20 -20 1069 1306"><use href="#th" fill="#fff" fill-rule="evenodd"/></svg>Dar Prosthodents</a>
+  <a class="btn" href="#contact" data-case>Send a case</a>
+</nav>
+
+<header class="hero" id="top"><div class="aura"></div><div class="wrap">
+<svg class="mark" viewBox="-20 -20 1069 1306" role="img" aria-label="Dar Prosthodents tooth logo"><defs><clipPath id="thc"><use href="#th" clip-rule="evenodd"/></clipPath><linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d8bff" stop-opacity="0"/><stop offset=".6" stop-color="#3d8bff" stop-opacity=".85"/><stop offset="1" stop-color="#bfe0ff"/></linearGradient></defs>
+<use class="fl" href="#th" fill="#f6f9ff" fill-rule="evenodd"/><use class="ol" href="#th" fill="none" stroke="#9fd0ff" stroke-width="4" fill-rule="evenodd"/>
+<g clip-path="url(#thc)"><rect class="beam" x="-20" y="-140" width="1100" height="140" fill="url(#gl)"/></g><g><circle class="nd" cx="469" cy="250" r="66" style="animation-delay:4.08s"/><circle class="nd" cx="372" cy="727" r="39" style="animation-delay:4.80s"/><circle class="nd" cx="59" cy="175" r="35" style="animation-delay:3.97s"/><circle class="nd" cx="64" cy="516" r="35" style="animation-delay:4.48s"/><circle class="nd" cx="469" cy="405" r="35" style="animation-delay:4.31s"/><circle class="nd" cx="231" cy="197" r="34" style="animation-delay:4.00s"/><circle class="nd" cx="222" cy="826" r="34" style="animation-delay:4.94s"/><circle class="nd" cx="231" cy="59" r="34" style="animation-delay:3.79s"/><circle class="nd" cx="151" cy="368" r="33" style="animation-delay:4.26s"/><circle class="nd" cx="134" cy="994" r="32" style="animation-delay:5.20s"/><circle class="nd" cx="261" cy="477" r="29" style="animation-delay:4.42s"/><circle class="nd" cx="108" cy="829" r="28" style="animation-delay:4.95s"/><circle class="nd" cx="196" cy="713" r="27" style="animation-delay:4.77s"/><circle class="nd" cx="469" cy="740" r="26" style="animation-delay:4.82s"/><circle class="nd" cx="135" cy="668" r="26" style="animation-delay:4.71s"/><circle class="nd" cx="313" cy="1071" r="25" style="animation-delay:5.31s"/><circle class="nd" cx="242" cy="951" r="24" style="animation-delay:5.13s"/><circle class="nd" cx="173" cy="1129" r="23" style="animation-delay:5.40s"/><circle class="nd" cx="126" cy="91" r="23" style="animation-delay:3.84s"/><circle class="nd" cx="355" cy="844" r="23" style="animation-delay:4.97s"/><circle class="nd" cx="35" cy="333" r="22" style="animation-delay:4.20s"/><circle class="nd" cx="264" cy="1136" r="21" style="animation-delay:5.41s"/><circle class="nd" cx="405" cy="111" r="18" style="animation-delay:3.87s"/><circle class="nd" cx="324" cy="957" r="18" style="animation-delay:5.14s"/></g></svg>
+<h1 class="rise">DAR PROSTHODENTS</h1><p class="rise">Dar Prosthodents is a leading dental laboratory network operating in Lahore and Karachi, Pakistan. Founded by Mr. Idrees Ahmed Dar, the company offers a comprehensive range of dental laboratory services, including restorative, prosthetic, implant, and orthodontic work, alongside advanced CAD/CAM solutions.</p>
+<div class="cta rise"><a class="btn solid" href="#contact" data-case>Send us a case</a><a class="btn" href="#departments">What we make</a></div></div><div class="scrollcue" aria-hidden="true"></div></header>
+
+<section class="why" id="zirconia">
+  <div class="wrap split">
+    <div>
+      <h2>Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM)</h2>
+      <p class="lede">Experienced technicians and advanced computer technology working together. CAD/CAM zirconia gives your patients a stronger, more natural and more tissue-friendly restoration than PFM.</p>
+    </div>
+    <dl>
+      <div><dt>Strong and aesthetic</dt><dd>Zirconia offers superior strength with a natural appearance, so a restoration can be tough and lifelike at once.</dd></div>
+      <div><dt>Gentle on the tooth</dt><dd>High strength allows thinner restorations. That means less tooth reduction and more natural tooth structure kept.</dd></div>
+      <div><dt>Healthy for the gums</dt><dd>Zirconia is biocompatible and tissue-friendly, supporting better gum health and lowering the risk of allergic reactions.</dd></div>
+      <div><dt>Precision fit</dt><dd>Digital design and milling give a consistent, accurate fit for crowns, bridges and implant restorations.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="cadcam" id="cadcam"><div class="wrap"><h2>Watch a crown go from scan to milled zirconia.</h2><p class="lede">The same digital workflow runs every case, with your review before anything is cut.</p>
+<div class="ccgrid"><div class="ccbox"><svg id="cc" class="p1" viewBox="0 0 640 320" role="img" aria-label="Animation: scan, design, mill and finish a zirconia crown">
+<defs><clipPath id="cl"><path transform="translate(106 70) scale(1.6) translate(-60 -40)" d="M60 70C60 45 85 40 100 50C115 40 140 45 140 70C140 95 135 110 130 140C128 160 118 160 114 140C111 125 89 125 86 140C82 160 72 160 70 140C65 110 60 95 60 70Z"/></clipPath></defs>
+<rect x="16" y="16" width="300" height="270" rx="8" fill="#0b1226" stroke="#9fd0ff" stroke-opacity=".3"/>
+<rect x="336" y="16" width="288" height="270" rx="8" fill="#0b1226" stroke="#9fd0ff" stroke-opacity=".3"/>
+<g class="model"><path transform="translate(106 70) scale(1.6) translate(-60 -40)" d="M60 70C60 45 85 40 100 50C115 40 140 45 140 70C140 95 135 110 130 140C128 160 118 160 114 140C111 125 89 125 86 140C82 160 72 160 70 140C65 110 60 95 60 70Z" fill="none" stroke="#cfd8e6" stroke-width="1" stroke-dasharray="3 4"/></g>
+<g class="beam"><rect x="90" y="60" width="160" height="10" fill="#9fd0ff" opacity=".7"/><rect x="90" y="64" width="160" height="2" fill="#fff"/></g>
+<g class="mesh" fill="none" stroke="#9fd0ff" stroke-width="1"><g clip-path="url(#cl)"><path pathLength="1" d="M96 78 Q170 92 244 78"/><path pathLength="1" d="M96 102 Q170 116 244 102"/><path pathLength="1" d="M96 126 Q170 140 244 126"/><path pathLength="1" d="M96 150 Q170 164 244 150"/><path pathLength="1" d="M96 174 Q170 188 244 174"/><path pathLength="1" d="M96 198 Q170 212 244 198"/><path pathLength="1" d="M96 222 Q170 236 244 222"/><path pathLength="1" d="M96 246 Q170 260 244 246"/><path pathLength="1" d="M122 66 Q131 166 122 266"/><path pathLength="1" d="M142 66 Q151 166 142 266"/><path pathLength="1" d="M162 66 Q171 166 162 266"/><path pathLength="1" d="M182 66 Q191 166 182 266"/><path pathLength="1" d="M202 66 Q211 166 202 266"/></g><path pathLength="1" stroke-width="1.8" transform="translate(106 70) scale(1.6) translate(-60 -40)" d="M60 70C60 45 85 40 100 50C115 40 140 45 140 70C140 95 135 110 130 140C128 160 118 160 114 140C111 125 89 125 86 140C82 160 72 160 70 140C65 110 60 95 60 70Z"/></g>
+<circle cx="480" cy="178" r="104" fill="#131d36" stroke="#9fd0ff" stroke-opacity=".4" stroke-dasharray="2 6"/>
+<g class="rcrown"><path transform="translate(428 100) scale(1.3) translate(-60 -40)" d="M60 70C60 45 85 40 100 50C115 40 140 45 140 70C140 95 135 110 130 140C128 160 118 160 114 140C111 125 89 125 86 140C82 160 72 160 70 140C65 110 60 95 60 70Z" fill="#f3efe6"/><path transform="translate(428 100) scale(1.3) translate(-60 -40)" d="M78 66C88 60 94 62 100 70C106 62 112 60 122 66M100 70V96" fill="none" stroke="#b9c4d6" stroke-width="1.2"/></g>
+<rect class="cover" x="420" y="92" width="120" height="172" fill="#131d36"/>
+<g class="tool"><g class="tw"><rect x="476" y="22" width="8" height="64" rx="3" fill="#cfd8e6"/><polygon points="476,86 484,86 480,98" fill="#9fd0ff"/><circle cx="480" cy="98" r="7" fill="#9fd0ff" opacity=".45"/></g></g>
+<text x="32" y="276" fill="#9aa6bd" font-size="13" font-family="Hanken Grotesk,system-ui,sans-serif">CAD: scan and Exocad design</text>
+<text x="352" y="276" fill="#9aa6bd" font-size="13" font-family="Hanken Grotesk,system-ui,sans-serif">CAM: zirconia milling</text></svg></div><ol class="ph"><li class="on"><b>Scan</b><span>The model is captured digitally.</span></li><li><b>Design</b><span>Exocad design, reviewed with you.</span></li><li><b>Mill</b><span>The approved design is cut from zirconia.</span></li><li><b>Finish</b><span>Checked and ready to deliver.</span></li></ol></div>
+<ul class="feat"><li>Dentist-guided Exocad designs</li><li>Real-time communication</li><li>Unlimited reviews</li><li>Exceptional shades</li><li>Natural aesthetics</li><li>Premium quality</li><li>Fast service</li></ul></div></section>
+
+<section class="depts" id="departments"><div class="wrap"><h2>Four Departments. One Laboratory.</h2><p class="lede" style="margin-bottom:2.5rem">Our product range includes diverse types and quality options. Ask us for details.</p><div class="dept"><div class="dhead"><h3>Crowns, bridges &amp; veneers</h3><p>Premium zirconia CAD/CAM crowns and bridges, plus PFM on traditional cast, CAD/CAM milled or 3D printed metal frameworks.</p></div><ul><li>CAD/CAM zirconia</li><li>PFM, metal cast</li><li>PFM, CAD/CAM milled</li><li>PFM, 3D printed</li><li>Smile makeover</li><li>E.max veneers</li><li>Maryland bridges</li></ul></div><div class="dept"><div class="dhead"><h3>Implant prosthetics</h3><p>Restorations supported by implants, from single units to full arches.</p></div><ul><li>Prostheses on implants</li><li>Custom abutments</li><li>Implant-supported restorations</li><li>Hybrid dentures</li></ul></div><div class="dept"><div class="dhead"><h3>Dentures</h3><p>Custom-made dentures that are comfortable, functional and natural-looking.</p></div><ul><li>Flexible</li><li>Full arch</li><li>Cast partial (CPD)</li><li>Overdentures</li><li>Immediate</li><li>Obturators</li></ul></div><div class="dept"><div class="dhead"><h3>Orthodontic appliances</h3><p>Custom-made solutions for orthodontic needs.</p></div><ul><li>Hawley retainers</li><li>Expanders</li><li>Lingual holders</li><li>Clear retainers &amp; splints</li><li>Frankel &amp; functional appliances</li><li>Space maintainers</li></ul></div></div></section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Send us a case.</h2>
+    <p class="lede">Message us on WhatsApp, or call the branch nearest you.</p>
+    <a class="btn solid" href="#contact" data-case>Message us on WhatsApp</a>
+
+    <div class="branches">
+      <div class="branch">
+        <h3>Lahore</h3>
+        <address>114-C Block, Model Town, Lahore</address>
+        <a href="tel:+923218472302">Zamir Ul Hassan Dar<br>+92 321 8472302</a>
+        <a class="wa" href="https://wa.me/923218472302" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="branch">
+        <h3>Karachi</h3>
+        <address>14-M, Dada Terrace, Shaheed-e-Millat Road, Karachi</address>
+        <a href="tel:+923002113706">Salman Dar<br>+92 300 2113706</a>
+        <a class="wa" href="https://wa.me/923002113706" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <p class="meta">Hours 09:00 to 21:00 &nbsp;|&nbsp; Follow us @darprosthodents</p>
+  </div>
+</section>
+
+<footer><svg class="nm big" viewBox="-20 -20 1069 1306"><use href="#th" fill="#fff" fill-rule="evenodd"/></svg>&copy; 2026 Dar Prosthodents. All rights reserved.</footer>
+
+<script>
+(function(){var s=document.getElementById('cc'),c=[].slice.call(document.querySelectorAll('.ph li')),p=0;
+function go(){s.setAttribute('class','p'+(p+1));c.forEach(function(e,i){e.classList.toggle('on',i===p)});p=(p+1)%4}
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){s.setAttribute('class','p4')}else{go();setInterval(go,3600)}})();
+</script><dialog id="case" aria-labelledby="ct"><button class="x" type="button" aria-label="Close">&times;</button><h3 id="ct">Send us a case</h3><p>Choose a branch to message on WhatsApp.</p>
+<a class="btn solid" href="https://wa.me/923218472302?text=Hello%20Dar%20Prosthodents%2C%20I%20would%20like%20to%20send%20a%20case." target="_blank" rel="noopener">Message us on WhatsApp (LAHORE)</a>
+<a class="btn solid" href="https://wa.me/923002113706?text=Hello%20Dar%20Prosthodents%2C%20I%20would%20like%20to%20send%20a%20case." target="_blank" rel="noopener">Message us on WhatsApp (KARACHI)</a></dialog><script>
+(function(){var d=document.getElementById('case');if(!d||!d.showModal)return;
+document.querySelectorAll('[data-case]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();d.showModal()})});
+d.querySelector('.x').addEventListener('click',function(){d.close()});
+d.addEventListener('click',function(e){if(e.target===d)d.close()});
+d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setTimeout(function(){d.close()},150)})})})();
+</script></body>
+</html>
